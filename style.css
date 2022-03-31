@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+
+nav.sticky {
+    background: rgb(64, 112, 244);
+    padding: 13px 0;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(64, 112, 244);
+}
+
+nav.sticky .logo a{
+    color: rgb(255, 255, 255);
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin: 0 8px;
+    list-style: none;
+}
+
+.menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(14, 36, 49);
+}
+
+nav.sticky .menu a{
+    color: rgb(255, 255, 255);
+}
+
+nav.sticky .menu a:hover{
+    color: rgb(14, 36, 49);
+}
+
+.media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: rgb(64, 112, 244);
+}
+
+nav.sticky .media-icons a{
+    color: rgb(255, 255, 255);
+  }
+
+/* Side Navigation Button */
+.cancel-btn, .menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    /* cursor: pointer; */
+    /* transition: all 0.3s ease; */
+    display: none; 
+}
+
+.menu-btn {
+    color: rgb(64, 112, 244);
+}
+
+/* Home Section */
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("images/background_mountain.png") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #0E2431;
+}
+
+.text-one{
+    font-size: 25px;
+}
+
+.text-two{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.text-three{
+    font-size: 40px;
+    margin: 5px 0;
+    color: #4070f4;
+}
+
+.text-four{
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+
+/* Responsive Media Queries */
+@media (max-width: 750px) {
+    .navbar {
+        width: 90%;
+    }
+
+    .menu {
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        padding-top: 60px;
+        background: rgb(14, 36, 49);
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.4s ease;
+    }
+
+    .navbar.active .menu {
+        left: 0;
+    }
+
+    .menu a{
+        display: block;
+        font-size: 23px;
+        color: rgb(255, 255, 255);
+        margin: 10px 0;
+    }
+
+    .media-icons{
+        display: none;
+    }
+
+    .cancel-btn, .menu-btn {
+        display: block;
+    }
+
+    .text-two{
+        font-size: 65px;
+    }
+
+    .text-three{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 510px) {
+    .text-two{
+        font-size: 55px;
+    }
+
+    .text-three{
+        font-size: 33px;
+    }
+}
