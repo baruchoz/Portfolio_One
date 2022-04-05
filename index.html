@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <!-- Fontawesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!--  Google Fonts Link  -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="src/images/layers.png" type="image/x-icon">
     <title>Baruch Rotbart's Portfolio Website</title>
 </head>
 
@@ -21,7 +22,9 @@
     <nav>
         <div class="navbar">
             <!-- Logo -->
-            <div class="logo"><a href="#home">BaruchRotbart.</a></div>
+            <div class="logo">
+                <a href="#home">BaruchRotbart.</a>
+            </div>
             <!-- Nav Items -->
             <ul class="menu">
                 <li class="menu-links"><a href="#home">Home</a></li>
@@ -33,27 +36,34 @@
                 <li class="cancel-btn">
                     <i class="fas fa-times"></i>
                 </li>
+                <div class="side-media-icons">
+                    <a href="https://www.linkedin.com/in/baruch-rotbart/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/baruchoz"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/baruch_rotbart"><i class="fab fa-twitter"></i></a>
+                </div>
             </ul>
-            <!-- Socials Icon Links -->
             <div class="media-icons">
                 <a href="https://www.linkedin.com/in/baruch-rotbart/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/baruchoz"><i class="fab fa-github"></i></a>
                 <a href="https://twitter.com/baruch_rotbart"><i class="fab fa-twitter"></i></a>
             </div>
-        </div>
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
+            <!-- Socials Icon Links -->
+            <!-- Burger Icon -->
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
     <!-- Home Section -->
     <section class="home" id="home">
-        <div class="home-content">
+        <div class="hero-content">
             <div class="text">
-                <div class="text-one">Hello,</div>
-                <div class="text-two">I'm Baruch Rotbart</div>
-                <div class="text-three">Fullstack Web Developer</div>
-                <div class="text-four">From Chicago</div>
+                <div class="text-one">Baruch Rotbart</div>
+                <div class="text-two">Full Stack Web Developer</div>
+                <div class="btn">
+                    <button><a href="#about">About Me</a></button>
+                </div>
             </div>
         </div>
     </section>
@@ -64,22 +74,22 @@
             <div class="title"><span>About Me</span></div>
             <div class="about-details">
                 <div class="left">
-                    <img src="images/portfolio.jpg" alt="">
+                    <img src="src/images/portfolio.jpg" alt="">
                 </div>
                 <div class="right">
-                    <div class="topic">The Art of Code</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur,
-                        nobis voluptatem ipsum repellat nemo quisquam error reprehenderit recusandae odio vel, suscipit.
-                        Voluptas mollitia accusantium quaerat aspernatur labore dolorum placeat ipsa sint nam
-                        perspiciatis eos consectetur veritatis debitis. Quis aliquam unde sed maiores sit! Hic molestiae
-                        optio iste iure earum amet nostrum quaerat facere quae veniam maiores harum iusto aperiam vel
-                        inventore illo voluptatibus voluptates quo impedit voluptatum error vitae, omnis praesentium?
-                        Aperiam nulla non, nesciunt fuga rem perferendis alias et, temporibus, distinctio culpa unde a
-                        laborum libero ducimus. Facilis veniam sit praesentium, voluptatibus sint maxime iusto eaque.
+                    <div class="topic">A Passion For Coding</div>
+                    <p>I am a passionate, creative, and highly motivated Full Stack Web Developer who wants to create
+                        positive changes for
+                        the world. I take pride in my ability to solve problems and with perseverance I find solutions
+                        for
+                        the scenarios presented. I have enjoyed my experiences being part of a team however but I also
+                        love to work on my
+                        own to find and create solutions. I am constantly learning new ways to strengthen my coding
+                        ability and my problem solving skills.
                     </p>
                     <div class="button">
-                        <a href="images/BaruchRotbartResume.pdf" download="Baruch-Rotbart-Resume">
-                            <button><i class="fa fa-download"></i> Download CV</button>
+                        <a href="src/images/BaruchRotbartResume.pdf" download="Baruch-Rotbart-Resume">
+                            <button><i class="fa fa-download"></i> Download Resume</button>
                         </a>
                     </div>
                 </div>
@@ -94,9 +104,10 @@
             <div class="skills-details">
                 <div class="text">
                     <div class="topic">Skills Reflects Our Knowledge</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus tenetur tempora? Quasi, rem
-                        quas omnis. Porro rem aspernatur reiciendis ut praesentium minima ad, quos, officia! Illo
-                        libero, et, distinctio repellat sed nesciunt est modi quaerat placeat. Quod molestiae, alias?
+                    These are just a few of the coding languages and frameworks I have experience with.
+                    <div class="topic certs">Certifications</div>
+                    <p>
+                        Coding Temple Software Development BootCamp • 2021
                     </p>
                     <div class="experience">
                         <div class="num">1</div>
@@ -207,14 +218,16 @@
     </section>
 
     <footer>
+        <a href="https://www.flaticon.com/free-icons/illustration" title="illustration icons">Illustration icons
+            created by Freepik - Flaticon</a>
         <div class="text">
-            <span>Baruch Rotbart | &#169; 2022 All Rights Reserved</span>
+            <span><a href="#">Baruch Rotbart | &#169; 2022 All Rights Reserved</a></span>
         </div>
     </footer>
 
 
     <!-- JavaScript Link -->
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 
 </html>
